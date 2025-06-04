@@ -23,11 +23,12 @@ namespace FinalSpring2025
             SqlCommand insertCmd = new SqlCommand();
             insertCmd.Connection = con;
             // Paramaterized queries 
-            insertCmd.CommandText = "INSERT INTO Reviews(CustomerId, DessertId, Score)" +
-                "VALUES (@customerId, @dessertId, @score)";
+            insertCmd.CommandText = "INSERT INTO Reviews(CustomerId, DessertId, Score, Date)" +
+                "VALUES (@customerId, @dessertId, @score, @date)";
             insertCmd.Parameters.AddWithValue("@customerId", review.CustomerId);
             insertCmd.Parameters.AddWithValue("@dessertId", review.DessertId);
             insertCmd.Parameters.AddWithValue("@score", review.Score);
+            insertCmd.Parameters.AddWithValue("@date", DateTime.Now); // Automatically sets the date to current date
 
             // Opening connection to database
             con.Open();

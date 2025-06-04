@@ -31,10 +31,10 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            CustomerNameTxt = new TextBox();
-            CustomerEmailTxt = new TextBox();
+            NameTxt = new TextBox();
+            EmailTxt = new TextBox();
             AddCustomerBtn = new Button();
-            CustomerDobTxt = new TextBox();
+            DateOfBirthTxt = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -64,19 +64,19 @@
             label3.TabIndex = 2;
             label3.Text = "Date of Birth:";
             // 
-            // CustomerNameTxt
+            // NameTxt
             // 
-            CustomerNameTxt.Location = new Point(129, 25);
-            CustomerNameTxt.Name = "CustomerNameTxt";
-            CustomerNameTxt.Size = new Size(100, 23);
-            CustomerNameTxt.TabIndex = 3;
+            NameTxt.Location = new Point(129, 25);
+            NameTxt.Name = "NameTxt";
+            NameTxt.Size = new Size(100, 23);
+            NameTxt.TabIndex = 3;
             // 
-            // CustomerEmailTxt
+            // EmailTxt
             // 
-            CustomerEmailTxt.Location = new Point(129, 87);
-            CustomerEmailTxt.Name = "CustomerEmailTxt";
-            CustomerEmailTxt.Size = new Size(100, 23);
-            CustomerEmailTxt.TabIndex = 4;
+            EmailTxt.Location = new Point(129, 87);
+            EmailTxt.Name = "EmailTxt";
+            EmailTxt.Size = new Size(100, 23);
+            EmailTxt.TabIndex = 4;
             // 
             // AddCustomerBtn
             // 
@@ -88,22 +88,22 @@
             AddCustomerBtn.UseVisualStyleBackColor = true;
             AddCustomerBtn.Click += AddCustomerBtn_Click;
             // 
-            // CustomerDobTxt
+            // DateOfBirthTxt
             // 
-            CustomerDobTxt.Location = new Point(129, 156);
-            CustomerDobTxt.Name = "CustomerDobTxt";
-            CustomerDobTxt.Size = new Size(100, 23);
-            CustomerDobTxt.TabIndex = 7;
+            DateOfBirthTxt.Location = new Point(129, 156);
+            DateOfBirthTxt.Name = "DateOfBirthTxt";
+            DateOfBirthTxt.Size = new Size(100, 23);
+            DateOfBirthTxt.TabIndex = 7;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(258, 281);
-            Controls.Add(CustomerDobTxt);
+            Controls.Add(DateOfBirthTxt);
             Controls.Add(AddCustomerBtn);
-            Controls.Add(CustomerEmailTxt);
-            Controls.Add(CustomerNameTxt);
+            Controls.Add(EmailTxt);
+            Controls.Add(NameTxt);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -118,9 +118,9 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox CustomerNameTxt;
-        private TextBox CustomerEmailTxt;
+        private TextBox NameTxt;
+        private TextBox EmailTxt;
         private Button AddCustomerBtn;
-        private TextBox CustomerDobTxt;
+        private TextBox DateOfBirthTxt;
     }
 }

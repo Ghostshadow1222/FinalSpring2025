@@ -19,7 +19,17 @@ namespace FinalSpring2025
 
         private void AddCustomerBtn_Click(object sender, EventArgs e)
         {
-            
+            // Assuming data will be valid
+
+            string name = NameTxt.Text;
+            string email = EmailTxt.Text;
+            DateTime dateOfBirth = Convert.ToDateTime(DateOfBirthTxt.Text);
+
+            Customer customer = new Customer(name, email, dateOfBirth);
+
+            CustomerDB.AddCustomer(customer);
+            MessageBox.Show("Customer added successfully!");
+            Close();
         }
     }
 }

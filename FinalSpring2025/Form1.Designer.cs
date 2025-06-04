@@ -35,7 +35,7 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            ReviewTxt = new TextBox();
+            RatingTxt = new TextBox();
             CustomerBtn = new Button();
             DessertBtn = new Button();
             groupBox1.SuspendLayout();
@@ -63,7 +63,7 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(ReviewTxt);
+            groupBox1.Controls.Add(RatingTxt);
             groupBox1.Controls.Add(CustomerCmb);
             groupBox1.Controls.Add(DessertCmb);
             groupBox1.Location = new Point(53, 35);
@@ -110,12 +110,12 @@
             label1.TabIndex = 3;
             label1.Text = "Customer:";
             // 
-            // ReviewTxt
+            // RatingTxt
             // 
-            ReviewTxt.Location = new Point(153, 234);
-            ReviewTxt.Name = "ReviewTxt";
-            ReviewTxt.Size = new Size(100, 23);
-            ReviewTxt.TabIndex = 2;
+            RatingTxt.Location = new Point(153, 234);
+            RatingTxt.Name = "RatingTxt";
+            RatingTxt.Size = new Size(100, 23);
+            RatingTxt.TabIndex = 2;
             // 
             // CustomerBtn
             // 
@@ -162,7 +162,7 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private TextBox ReviewTxt;
+        private TextBox RatingTxt;
         private Button CustomerBtn;
         private Button DessertBtn;
     }

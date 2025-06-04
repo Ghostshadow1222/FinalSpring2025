@@ -31,9 +31,9 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
-            DessertNameTxt = new TextBox();
-            DessertPriceTxt = new TextBox();
-            DessertCategoryTxt = new TextBox();
+            NameTxt = new TextBox();
+            PriceTxt = new TextBox();
+            CategoryTxt = new TextBox();
             AddDessertBtn = new Button();
             SuspendLayout();
             // 
@@ -64,26 +64,26 @@
             label3.TabIndex = 2;
             label3.Text = "Category:";
             // 
-            // DessertNameTxt
+            // NameTxt
             // 
-            DessertNameTxt.Location = new Point(131, 27);
-            DessertNameTxt.Name = "DessertNameTxt";
-            DessertNameTxt.Size = new Size(100, 23);
-            DessertNameTxt.TabIndex = 3;
+            NameTxt.Location = new Point(131, 27);
+            NameTxt.Name = "NameTxt";
+            NameTxt.Size = new Size(100, 23);
+            NameTxt.TabIndex = 3;
             // 
-            // DessertPriceTxt
+            // PriceTxt
             // 
-            DessertPriceTxt.Location = new Point(131, 91);
-            DessertPriceTxt.Name = "DessertPriceTxt";
-            DessertPriceTxt.Size = new Size(100, 23);
-            DessertPriceTxt.TabIndex = 4;
+            PriceTxt.Location = new Point(131, 91);
+            PriceTxt.Name = "PriceTxt";
+            PriceTxt.Size = new Size(100, 23);
+            PriceTxt.TabIndex = 4;
             // 
-            // DessertCategoryTxt
+            // CategoryTxt
             // 
-            DessertCategoryTxt.Location = new Point(131, 158);
-            DessertCategoryTxt.Name = "DessertCategoryTxt";
-            DessertCategoryTxt.Size = new Size(100, 23);
-            DessertCategoryTxt.TabIndex = 5;
+            CategoryTxt.Location = new Point(131, 158);
+            CategoryTxt.Name = "CategoryTxt";
+            CategoryTxt.Size = new Size(100, 23);
+            CategoryTxt.TabIndex = 5;
             // 
             // AddDessertBtn
             // 
@@ -101,9 +101,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(259, 283);
             Controls.Add(AddDessertBtn);
-            Controls.Add(DessertCategoryTxt);
-            Controls.Add(DessertPriceTxt);
-            Controls.Add(DessertNameTxt);
+            Controls.Add(CategoryTxt);
+            Controls.Add(PriceTxt);
+            Controls.Add(NameTxt);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -118,9 +118,9 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox DessertNameTxt;
-        private TextBox DessertPriceTxt;
-        private TextBox DessertCategoryTxt;
+        private TextBox NameTxt;
+        private TextBox PriceTxt;
+        private TextBox CategoryTxt;
         private Button AddDessertBtn;
     }
 }

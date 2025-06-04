@@ -8,6 +8,18 @@ namespace FinalSpring2025
 {
     internal class Review
     {
+        public Review(int reviewId, int customerId, int dessertId, int score)
+        {
+            ReviewId = reviewId;
+            CustomerId = customerId;
+            DessertId = dessertId;
+            Score = score;
+        }
+
+        public Review()
+        {
+        }
+
         // Implemented C# properties written out, allowing for more modularity and future changes
         private int reviewId;
 
