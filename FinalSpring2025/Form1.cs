@@ -9,6 +9,15 @@ namespace FinalSpring2025
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            PopulateReviewers();
+        }
+
+        private void PopulateReviewers()
+        {
+            CustomerCmb.Items.Clear();
+
+            DessertCmb.Items.Clear();
+
             List<Customer> customers = CustomerDB.GetAllCustomers();
 
             foreach (Customer customer in customers)
@@ -22,7 +31,23 @@ namespace FinalSpring2025
             {
                 DessertCmb.Items.Add(dessert);
             }
+        }
 
+        private void ReviewBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CustomerBtn_Click(object sender, EventArgs e)
+        {
+            Form2 customerForm = new Form2();
+            customerForm.ShowDialog();
+        }
+
+        private void DessertBtn_Click(object sender, EventArgs e)
+        {
+            Form3 dessertForm = new Form3();
+            dessertForm.ShowDialog();
         }
     }
 }

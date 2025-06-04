@@ -86,6 +86,7 @@
             AddCustomerBtn.TabIndex = 6;
             AddCustomerBtn.Text = "Add Customer";
             AddCustomerBtn.UseVisualStyleBackColor = true;
+            AddCustomerBtn.Click += AddCustomerBtn_Click;
             // 
             // CustomerDobTxt
             // 

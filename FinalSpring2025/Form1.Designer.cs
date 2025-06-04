@@ -75,12 +75,13 @@
             // 
             // ReviewBtn
             // 
-            ReviewBtn.Location = new Point(103, 288);
+            ReviewBtn.Location = new Point(109, 297);
             ReviewBtn.Name = "ReviewBtn";
             ReviewBtn.Size = new Size(171, 62);
             ReviewBtn.TabIndex = 6;
             ReviewBtn.Text = "Add Review";
             ReviewBtn.UseVisualStyleBackColor = true;
+            ReviewBtn.Click += ReviewBtn_Click;
             // 
             // label3
             // 
@@ -124,6 +125,7 @@
             CustomerBtn.TabIndex = 3;
             CustomerBtn.Text = "Add Customer";
             CustomerBtn.UseVisualStyleBackColor = true;
+            CustomerBtn.Click += CustomerBtn_Click;
             // 
             // DessertBtn
             // 
@@ -133,6 +135,7 @@
             DessertBtn.TabIndex = 4;
             DessertBtn.Text = "Add Dessert";
             DessertBtn.UseVisualStyleBackColor = true;
+            DessertBtn.Click += DessertBtn_Click;
             // 
             // Form1
             // 

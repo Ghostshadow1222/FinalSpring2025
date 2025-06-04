@@ -93,6 +93,7 @@
             AddDessertBtn.TabIndex = 6;
             AddDessertBtn.Text = "Add Dessert";
             AddDessertBtn.UseVisualStyleBackColor = true;
+            AddDessertBtn.Click += AddDessertBtn_Click;
             // 
             // Form3
             // 
