@@ -8,6 +8,13 @@ namespace FinalSpring2025
 {
     internal class Dessert
     {
+        public Dessert(string? name, double price, string? category)
+        {
+            Name = name;
+            Price = price;
+            Category = category;
+        }
+
         public int DessertId { get; set; }
         
         public string Name { get; set; }
@@ -15,5 +22,10 @@ namespace FinalSpring2025
         public double Price { get; set; }
 
         public string Category { get; set; }
+
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

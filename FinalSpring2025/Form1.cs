@@ -6,5 +6,23 @@ namespace FinalSpring2025
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            List<Customer> customers = CustomerDB.GetAllCustomers();
+
+            foreach (Customer customer in customers)
+            {
+                CustomerCmb.Items.Add(customer);
+            }
+
+            List<Dessert> desserts = DessertDB.GetAllDesserts();
+
+            foreach (Dessert dessert in desserts)
+            {
+                DessertCmb.Items.Add(dessert);
+            }
+
+        }
     }
 }
